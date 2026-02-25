@@ -1,0 +1,22 @@
+{
+  "name": "anthropic-cybersecurity-skills",
+  "version": "1.0.0",
+  "description": "Open-source database of 607+ cybersecurity skills for AI agents and security practitioners",
+  "author": "mukul975",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills.git"
+  },
+  "keywords": [
+    "cybersecurity",
+    "ai-skills",
+    "agent-skills",
+    "skill-database",
+    "claude",
+    "anthropic"
+  ],
+  "dependencies": {
+    "@anthropic-ai/claude-code": "^2.1.50"
+  }
+}
