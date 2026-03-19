@@ -1,30 +1,32 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-03-19T13:12:59Z",
+  "generated_at": "2026-03-19T18:14:36Z",
   "repository": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
-  "total_skills": 724,
+  "total_skills": 753,
   "total_domains": 1,
-  "total_subdomains": 36,
+  "total_subdomains": 46,
   "domain_stats": {
-    "cybersecurity": 724
+    "cybersecurity": 753
   },
   "subdomain_stats": {
     "digital-forensics": 37,
     "identity-security": 2,
     "malware-analysis": 39,
-    "security-operations": 26,
-    "threat-intelligence": 49,
-    "cloud-security": 58,
+    "security-operations": 28,
+    "threat-intelligence": 50,
+    "cloud-security": 61,
     "soc-operations": 33,
     "blockchain-security": 1,
-    "mobile-security": 12,
+    "mobile-security": 13,
     "container-security": 29,
     "log-analysis": 1,
     "phishing-defense": 15,
-    "network-security": 41,
+    "network-security": 43,
     "incident-response": 25,
-    "threat-hunting": 54,
+    "threat-hunting": 56,
     "ransomware-defense": 13,
+    "supply-chain-security": 3,
+    "firmware-security": 1,
     "red-teaming": 24,
     "devsecops": 17,
     "identity-access-management": 33,
@@ -32,28 +34,36 @@
     "web-application-security": 42,
     "penetration-testing": 20,
     "zero-trust-architecture": 17,
-    "cryptography": 14,
+    "cryptography": 15,
     "endpoint-security": 17,
+    "deception-technology": 3,
+    "ai-security": 2,
     "ot-ics-security": 28,
     "api-security": 28,
+    "wireless-security": 2,
     "threat-detection": 7,
-    "deception-technology": 2,
+    "social-engineering-defense": 1,
+    "offensive-security": 2,
+    "data-protection": 1,
     "application-security": 4,
-    "compliance-governance": 5,
-    "identity-and-access-management": 1,
+    "compliance-governance": 4,
+    "privacy-compliance": 2,
+    "identity-and-access-management": 2,
     "zero-trust": 1,
+    "ot-security": 1,
     "red-team": 2,
-    "offensive-security": 1,
-    "wireless-security": 1
+    "firmware-analysis": 1,
+    "purple-team": 1,
+    "governance-risk-compliance": 1
   },
   "top_tags": [
     {
       "tag": "threat-hunting",
-      "count": 62
+      "count": 64
     },
     {
       "tag": "mitre-attack",
-      "count": 60
+      "count": 61
     },
     {
       "tag": "penetration-testing",
@@ -68,11 +78,11 @@
       "count": 40
     },
     {
-      "tag": "incident-response",
-      "count": 37
+      "tag": "network-security",
+      "count": 38
     },
     {
-      "tag": "network-security",
+      "tag": "incident-response",
       "count": 37
     },
     {
@@ -81,7 +91,7 @@
     },
     {
       "tag": "forensics",
-      "count": 34
+      "count": 35
     },
     {
       "tag": "soc",
@@ -92,12 +102,12 @@
       "count": 30
     },
     {
-      "tag": "api-security",
+      "tag": "zero-trust",
       "count": 29
     },
     {
-      "tag": "zero-trust",
-      "count": 28
+      "tag": "api-security",
+      "count": 29
     },
     {
       "tag": "ot-security",
@@ -120,11 +130,11 @@
       "count": 24
     },
     {
-      "tag": "privilege-escalation",
+      "tag": "active-directory",
       "count": 23
     },
     {
-      "tag": "kubernetes",
+      "tag": "privilege-escalation",
       "count": 23
     }
   ],
@@ -1180,6 +1190,27 @@
       "path": "skills/analyzing-ransomware-payment-wallets"
     },
     {
+      "name": "analyzing-sbom-for-supply-chain-vulnerabilities",
+      "description": ">",
+      "domain": "cybersecurity",
+      "subdomain": "supply-chain-security",
+      "tags": [
+        "SBOM",
+        "CycloneDX",
+        "SPDX",
+        "NVD",
+        "CVE",
+        "supply-chain",
+        "dependency-analysis",
+        "syft",
+        "grype"
+      ],
+      "version": "1.0.0",
+      "author": "mukul975",
+      "license": "Apache-2.0",
+      "path": "skills/analyzing-sbom-for-supply-chain-vulnerabilities"
+    },
+    {
       "name": "analyzing-security-logs-with-splunk",
       "description": ">",
       "domain": "cybersecurity",
@@ -1344,6 +1375,25 @@
       "author": "mukul975",
       "license": "Apache-2.0",
       "path": "skills/analyzing-typosquatting-domains-with-dnstwist"
+    },
+    {
+      "name": "analyzing-uefi-bootkit-persistence",
+      "description": ">",
+      "domain": "cybersecurity",
+      "subdomain": "firmware-security",
+      "tags": [
+        "UEFI",
+        "bootkit",
+        "firmware",
+        "Secure-Boot",
+        "chipsec",
+        "ESP",
+        "persistence"
+      ],
+      "version": "1.0.0",
+      "author": "mukul975",
+      "license": "Apache-2.0",
+      "path": "skills/analyzing-uefi-bootkit-persistence"
     },
     {
       "name": "analyzing-usb-device-connection-history",
@@ -1597,6 +1647,24 @@
       "author": "mukul975",
       "license": "Apache-2.0",
       "path": "skills/auditing-terraform-infrastructure-for-security"
+    },
+    {
+      "name": "auditing-tls-certificate-transparency-logs",
+      "description": ">",
+      "domain": "cybersecurity",
+      "subdomain": "threat-intelligence",
+      "tags": [
+        "certificate-transparency",
+        "CT-logs",
+        "crt-sh",
+        "subdomain-discovery",
+        "TLS-monitoring",
+        "RFC-6962"
+      ],
+      "version": "1.0.0",
+      "author": "mukul975",
+      "license": "Apache-2.0",
+      "path": "skills/auditing-tls-certificate-transparency-logs"
     },
     {
       "name": "automating-ioc-enrichment",
@@ -3139,6 +3207,25 @@
       "path": "skills/deobfuscating-powershell-obfuscated-malware"
     },
     {
+      "name": "deploying-active-directory-honeytokens",
+      "description": ">",
+      "domain": "cybersecurity",
+      "subdomain": "deception-technology",
+      "tags": [
+        "active-directory",
+        "honeytokens",
+        "kerberoasting",
+        "deception",
+        "detection",
+        "bloodhound",
+        "gpo"
+      ],
+      "version": "1.0",
+      "author": "mukul975",
+      "license": "Apache-2.0",
+      "path": "skills/deploying-active-directory-honeytokens"
+    },
+    {
       "name": "deploying-cloudflare-access-for-zero-trust",
       "description": ">",
       "domain": "cybersecurity",
@@ -3285,6 +3372,23 @@
       "author": "mukul975",
       "license": "Apache-2.0",
       "path": "skills/deploying-tailscale-for-zero-trust-vpn"
+    },
+    {
+      "name": "detecting-ai-model-prompt-injection-attacks",
+      "description": ">",
+      "domain": "cybersecurity",
+      "subdomain": "ai-security",
+      "tags": [
+        "prompt-injection",
+        "LLM-security",
+        "OWASP-LLM-Top10",
+        "NLP-classification",
+        "input-validation"
+      ],
+      "version": "1.0.0",
+      "author": "mukul975",
+      "license": "Apache-2.0",
+      "path": "skills/detecting-ai-model-prompt-injection-attacks"
     },
     {
       "name": "detecting-anomalies-in-industrial-control-systems",
@@ -3555,6 +3659,26 @@
       "path": "skills/detecting-beaconing-patterns-with-zeek"
     },
     {
+      "name": "detecting-bluetooth-low-energy-attacks",
+      "description": ">",
+      "domain": "cybersecurity",
+      "subdomain": "wireless-security",
+      "tags": [
+        "ble",
+        "bluetooth",
+        "ubertooth",
+        "nrf-sniffer",
+        "gatt",
+        "wireless-security",
+        "iot-security",
+        "replay-attack"
+      ],
+      "version": "1.0.0",
+      "author": "mukul975",
+      "license": "Apache-2.0",
+      "path": "skills/detecting-bluetooth-low-energy-attacks"
+    },
+    {
       "name": "detecting-broken-object-property-level-authorization",
       "description": "Detect and test for OWASP API3:2023 Broken Object Property Level Authorization vulnerabilities including excessive data exposure and mass assignment attacks.",
       "domain": "cybersecurity",
@@ -3629,6 +3753,24 @@
       "author": "mukul975",
       "license": "Apache-2.0",
       "path": "skills/detecting-cloud-threats-with-guardduty"
+    },
+    {
+      "name": "detecting-command-and-control-over-dns",
+      "description": ">",
+      "domain": "cybersecurity",
+      "subdomain": "network-security",
+      "tags": [
+        "dns",
+        "c2",
+        "tunneling",
+        "dga",
+        "network-forensics",
+        "threat-detection"
+      ],
+      "version": "1.0.0",
+      "author": "mukul975",
+      "license": "Apache-2.0",
+      "path": "skills/detecting-command-and-control-over-dns"
     },
     {
       "name": "detecting-compromised-cloud-credentials",
@@ -3750,6 +3892,24 @@
       "author": "mukul975",
       "license": "Apache-2.0",
       "path": "skills/detecting-dcsync-attack-in-active-directory"
+    },
+    {
+      "name": "detecting-deepfake-audio-in-vishing-attacks",
+      "description": ">",
+      "domain": "cybersecurity",
+      "subdomain": "social-engineering-defense",
+      "tags": [
+        "deepfake-detection",
+        "vishing",
+        "audio-forensics",
+        "MFCC",
+        "spectral-analysis",
+        "voice-cloning"
+      ],
+      "version": "1.0.0",
+      "author": "mukul975",
+      "license": "Apache-2.0",
+      "path": "skills/detecting-deepfake-audio-in-vishing-attacks"
     },
     {
       "name": "detecting-dll-sideloading-attacks",
@@ -4258,6 +4418,29 @@
       "path": "skills/detecting-network-scanning-with-ids-signatures"
     },
     {
+      "name": "detecting-ntlm-relay-with-event-correlation",
+      "description": ">",
+      "domain": "cybersecurity",
+      "subdomain": "threat-hunting",
+      "tags": [
+        "threat-hunting",
+        "NTLM-relay",
+        "event-correlation",
+        "T1557.001",
+        "Event-4624",
+        "Responder",
+        "SMB-signing",
+        "LDAP-signing",
+        "NTLM-downgrade",
+        "PetitPotam",
+        "Active-Directory"
+      ],
+      "version": "1.0",
+      "author": "mukul975",
+      "license": "Apache-2.0",
+      "path": "skills/detecting-ntlm-relay-with-event-correlation"
+    },
+    {
       "name": "detecting-oauth-token-theft",
       "description": ">",
       "domain": "cybersecurity",
@@ -4500,6 +4683,24 @@
       "path": "skills/detecting-s3-data-exfiltration-attempts"
     },
     {
+      "name": "detecting-serverless-function-injection",
+      "description": ">",
+      "domain": "cybersecurity",
+      "subdomain": "cloud-security",
+      "tags": [
+        "serverless-security",
+        "Lambda-injection",
+        "event-source-poisoning",
+        "OWASP-serverless",
+        "IAM-escalation",
+        "CloudTrail"
+      ],
+      "version": "1.0.0",
+      "author": "mukul975",
+      "license": "Apache-2.0",
+      "path": "skills/detecting-serverless-function-injection"
+    },
+    {
       "name": "detecting-service-account-abuse",
       "description": "Detect abuse of service accounts through anomalous interactive logons, privilege escalation, lateral movement, and unauthorized access patterns.",
       "domain": "cybersecurity",
@@ -4721,6 +4922,26 @@
       "author": "mukul975",
       "license": "Apache-2.0",
       "path": "skills/detecting-t1548-abuse-elevation-control-mechanism"
+    },
+    {
+      "name": "detecting-typosquatting-packages-in-npm-pypi",
+      "description": ">",
+      "domain": "cybersecurity",
+      "subdomain": "supply-chain-security",
+      "tags": [
+        "typosquatting",
+        "npm",
+        "pypi",
+        "supply-chain",
+        "package-security",
+        "Levenshtein",
+        "dependency-confusion",
+        "malicious-packages"
+      ],
+      "version": "1.0.0",
+      "author": "mukul975",
+      "license": "Apache-2.0",
+      "path": "skills/detecting-typosquatting-packages-in-npm-pypi"
     },
     {
       "name": "detecting-wmi-persistence",
@@ -5788,6 +6009,29 @@
       "path": "skills/hunting-for-data-staging-before-exfiltration"
     },
     {
+      "name": "hunting-for-dcom-lateral-movement",
+      "description": ">",
+      "domain": "cybersecurity",
+      "subdomain": "threat-hunting",
+      "tags": [
+        "threat-hunting",
+        "DCOM",
+        "lateral-movement",
+        "T1021.003",
+        "Sysmon",
+        "MMC20",
+        "ShellWindows",
+        "ShellBrowserWindow",
+        "COM-objects",
+        "WMI",
+        "RPC"
+      ],
+      "version": "1.0",
+      "author": "mukul975",
+      "license": "Apache-2.0",
+      "path": "skills/hunting-for-dcom-lateral-movement"
+    },
+    {
       "name": "hunting-for-dcsync-attacks",
       "description": "Detect DCSync attacks by analyzing Windows Event ID 4662 for unauthorized DS-Replication-Get-Changes requests from non-domain-controller accounts.",
       "domain": "cybersecurity",
@@ -6531,6 +6775,25 @@
       "path": "skills/implementing-attack-path-analysis-with-xm-cyber"
     },
     {
+      "name": "implementing-attack-surface-management",
+      "description": ">",
+      "domain": "cybersecurity",
+      "subdomain": "offensive-security",
+      "tags": [
+        "attack-surface",
+        "reconnaissance",
+        "shodan",
+        "censys",
+        "subfinder",
+        "nuclei",
+        "asset-discovery"
+      ],
+      "version": "1.0",
+      "author": "mukul975",
+      "license": "Apache-2.0",
+      "path": "skills/implementing-attack-surface-management"
+    },
+    {
       "name": "implementing-aws-config-rules-for-compliance",
       "description": ">",
       "domain": "cybersecurity",
@@ -6585,6 +6848,25 @@
       "author": "mukul975",
       "license": "Apache-2.0",
       "path": "skills/implementing-aws-macie-for-data-classification"
+    },
+    {
+      "name": "implementing-aws-nitro-enclave-security",
+      "description": ">",
+      "domain": "cybersecurity",
+      "subdomain": "cloud-security",
+      "tags": [
+        "AWS-Nitro-Enclaves",
+        "confidential-computing",
+        "attestation",
+        "KMS",
+        "enclave-isolation",
+        "vsock",
+        "PCR"
+      ],
+      "version": "1.0.0",
+      "author": "mukul975",
+      "license": "Apache-2.0",
+      "path": "skills/implementing-aws-nitro-enclave-security"
     },
     {
       "name": "implementing-aws-security-hub",
@@ -6697,6 +6979,43 @@
       "author": "mukul975",
       "license": "Apache-2.0",
       "path": "skills/implementing-bgp-security-with-rpki"
+    },
+    {
+      "name": "implementing-browser-isolation-for-zero-trust",
+      "description": ">",
+      "domain": "cybersecurity",
+      "subdomain": "network-security",
+      "tags": [
+        "browser-isolation",
+        "zero-trust",
+        "RBI",
+        "CDR",
+        "URL-categorization",
+        "content-disarming",
+        "secure-web-gateway"
+      ],
+      "version": "1.0",
+      "author": "mukul975",
+      "license": "Apache-2.0",
+      "path": "skills/implementing-browser-isolation-for-zero-trust"
+    },
+    {
+      "name": "implementing-canary-tokens-for-network-intrusion",
+      "description": ">",
+      "domain": "cybersecurity",
+      "subdomain": "security-operations",
+      "tags": [
+        "canary-tokens",
+        "intrusion-detection",
+        "deception",
+        "network-security",
+        "honeytokens",
+        "breach-detection"
+      ],
+      "version": "1.0",
+      "author": "mukul975",
+      "license": "Apache-2.0",
+      "path": "skills/implementing-canary-tokens-for-network-intrusion"
     },
     {
       "name": "implementing-cisa-zero-trust-maturity-model",
@@ -6945,6 +7264,24 @@
       "path": "skills/implementing-continuous-security-validation-with-bas"
     },
     {
+      "name": "implementing-data-loss-prevention-with-microsoft-purview",
+      "description": ">",
+      "domain": "cybersecurity",
+      "subdomain": "data-protection",
+      "tags": [
+        "DLP",
+        "Microsoft-Purview",
+        "sensitivity-labels",
+        "endpoint-DLP",
+        "data-classification",
+        "compliance"
+      ],
+      "version": "1.0.0",
+      "author": "mukul975",
+      "license": "Apache-2.0",
+      "path": "skills/implementing-data-loss-prevention-with-microsoft-purview"
+    },
+    {
       "name": "implementing-ddos-mitigation-with-cloudflare",
       "description": "Configure Cloudflare DDoS protection with managed rulesets, rate limiting, WAF rules, Bot Management, and origin protection to mitigate volumetric, protocol, and application-layer attacks.",
       "domain": "cybersecurity",
@@ -7131,6 +7468,26 @@
       "author": "mukul975",
       "license": "Apache-2.0",
       "path": "skills/implementing-dragos-platform-for-ot-monitoring"
+    },
+    {
+      "name": "implementing-ebpf-security-monitoring",
+      "description": ">",
+      "domain": "cybersecurity",
+      "subdomain": "security-operations",
+      "tags": [
+        "implementing",
+        "ebpf",
+        "security",
+        "monitoring",
+        "tetragon",
+        "cilium",
+        "runtime",
+        "observability"
+      ],
+      "version": "1.0",
+      "author": "mukul975",
+      "license": "Apache-2.0",
+      "path": "skills/implementing-ebpf-security-monitoring"
     },
     {
       "name": "implementing-email-sandboxing-with-proofpoint",
@@ -7354,6 +7711,25 @@
       "path": "skills/implementing-gdpr-data-protection-controls"
     },
     {
+      "name": "implementing-gdpr-data-subject-access-request",
+      "description": ">",
+      "domain": "cybersecurity",
+      "subdomain": "privacy-compliance",
+      "tags": [
+        "gdpr",
+        "dsar",
+        "privacy",
+        "pii-discovery",
+        "data-subject-rights",
+        "compliance",
+        "article-15"
+      ],
+      "version": "1.0",
+      "author": "mukul975",
+      "license": "Apache-2.0",
+      "path": "skills/implementing-gdpr-data-subject-access-request"
+    },
+    {
       "name": "implementing-github-advanced-security-for-code-scanning",
       "description": "Configure GitHub Advanced Security with CodeQL to perform automated static analysis and vulnerability detection across repositories at enterprise scale.",
       "domain": "cybersecurity",
@@ -7427,6 +7803,25 @@
       "author": "mukul975",
       "license": "Apache-2.0",
       "path": "skills/implementing-google-workspace-sso-configuration"
+    },
+    {
+      "name": "implementing-hardware-security-key-authentication",
+      "description": ">",
+      "domain": "cybersecurity",
+      "subdomain": "identity-and-access-management",
+      "tags": [
+        "FIDO2",
+        "WebAuthn",
+        "hardware-security-key",
+        "YubiKey",
+        "passkeys",
+        "passwordless-authentication",
+        "CTAP2"
+      ],
+      "version": "1.0.0",
+      "author": "mukul975",
+      "license": "Apache-2.0",
+      "path": "skills/implementing-hardware-security-key-authentication"
     },
     {
       "name": "implementing-hashicorp-vault-dynamic-secrets",
@@ -7701,6 +8096,23 @@
       "author": "mukul975",
       "license": "Apache-2.0",
       "path": "skills/implementing-kubernetes-pod-security-standards"
+    },
+    {
+      "name": "implementing-llm-guardrails-for-security",
+      "description": ">",
+      "domain": "cybersecurity",
+      "subdomain": "ai-security",
+      "tags": [
+        "LLM-guardrails",
+        "NeMo-Guardrails",
+        "input-validation",
+        "output-filtering",
+        "AI-safety"
+      ],
+      "version": "1.0.0",
+      "author": "mukul975",
+      "license": "Apache-2.0",
+      "path": "skills/implementing-llm-guardrails-for-security"
     },
     {
       "name": "implementing-log-forwarding-with-fluentd",
@@ -8686,6 +9098,27 @@
       "path": "skills/implementing-siem-use-cases-for-detection"
     },
     {
+      "name": "implementing-sigstore-for-software-signing",
+      "description": ">",
+      "domain": "cybersecurity",
+      "subdomain": "supply-chain-security",
+      "tags": [
+        "sigstore",
+        "cosign",
+        "rekor",
+        "fulcio",
+        "software-signing",
+        "supply-chain",
+        "keyless-signing",
+        "OIDC",
+        "transparency-log"
+      ],
+      "version": "1.0.0",
+      "author": "mukul975",
+      "license": "Apache-2.0",
+      "path": "skills/implementing-sigstore-for-software-signing"
+    },
+    {
       "name": "implementing-soar-automation-with-phantom",
       "description": ">",
       "domain": "cybersecurity",
@@ -9339,6 +9772,24 @@
       "path": "skills/monitoring-darkweb-sources"
     },
     {
+      "name": "monitoring-scada-modbus-traffic-anomalies",
+      "description": ">",
+      "domain": "cybersecurity",
+      "subdomain": "ot-security",
+      "tags": [
+        "Modbus-TCP",
+        "SCADA",
+        "ICS-security",
+        "deep-packet-inspection",
+        "anomaly-detection",
+        "OT-monitoring"
+      ],
+      "version": "1.0.0",
+      "author": "mukul975",
+      "license": "Apache-2.0",
+      "path": "skills/monitoring-scada-modbus-traffic-anomalies"
+    },
+    {
       "name": "performing-access-recertification-with-saviynt",
       "description": "Configure and execute access recertification campaigns in Saviynt Enterprise Identity Cloud to validate user entitlements, revoke excessive access, and maintain compliance with SOX, SOC2, and HIPAA.",
       "domain": "cybersecurity",
@@ -9949,6 +10400,26 @@
       "path": "skills/performing-cloud-incident-containment-procedures"
     },
     {
+      "name": "performing-cloud-log-forensics-with-athena",
+      "description": ">",
+      "domain": "cybersecurity",
+      "subdomain": "cloud-security",
+      "tags": [
+        "cloud",
+        "forensics",
+        "athena",
+        "aws",
+        "cloudtrail",
+        "vpc-flow-logs",
+        "s3",
+        "alb"
+      ],
+      "version": "1.0",
+      "author": "mukul975",
+      "license": "Apache-2.0",
+      "path": "skills/performing-cloud-log-forensics-with-athena"
+    },
+    {
       "name": "performing-cloud-native-forensics-with-falco",
       "description": ">",
       "domain": "cybersecurity",
@@ -10442,6 +10913,24 @@
       "path": "skills/performing-file-carving-with-foremost"
     },
     {
+      "name": "performing-firmware-extraction-with-binwalk",
+      "description": ">",
+      "domain": "cybersecurity",
+      "subdomain": "firmware-analysis",
+      "tags": [
+        "firmware",
+        "binwalk",
+        "extraction",
+        "entropy",
+        "IoT-security",
+        "reverse-engineering"
+      ],
+      "version": "1.0.0",
+      "author": "mukul975",
+      "license": "Apache-2.0",
+      "path": "skills/performing-firmware-extraction-with-binwalk"
+    },
+    {
       "name": "performing-firmware-malware-analysis",
       "description": ">",
       "domain": "cybersecurity",
@@ -10716,6 +11205,26 @@
       "author": "mukul975",
       "license": "Apache-2.0",
       "path": "skills/performing-ioc-enrichment-automation"
+    },
+    {
+      "name": "performing-ios-app-security-assessment",
+      "description": ">",
+      "domain": "cybersecurity",
+      "subdomain": "mobile-security",
+      "tags": [
+        "mobile-security",
+        "ios",
+        "frida",
+        "objection",
+        "ssl-pinning",
+        "keychain",
+        "ipa-analysis",
+        "owasp-mastg"
+      ],
+      "version": "1.0.0",
+      "author": "mukul975",
+      "license": "Apache-2.0",
+      "path": "skills/performing-ios-app-security-assessment"
     },
     {
       "name": "performing-iot-security-assessment",
@@ -11414,6 +11923,27 @@
       "path": "skills/performing-plc-firmware-security-analysis"
     },
     {
+      "name": "performing-post-quantum-cryptography-migration",
+      "description": ">",
+      "domain": "cybersecurity",
+      "subdomain": "cryptography",
+      "tags": [
+        "post-quantum",
+        "PQC",
+        "CRYSTALS-Kyber",
+        "ML-KEM",
+        "ML-DSA",
+        "FIPS-203",
+        "FIPS-204",
+        "hybrid-TLS",
+        "crypto-agility"
+      ],
+      "version": "1.0",
+      "author": "mukul975",
+      "license": "Apache-2.0",
+      "path": "skills/performing-post-quantum-cryptography-migration"
+    },
+    {
       "name": "performing-power-grid-cybersecurity-assessment",
       "description": ">",
       "domain": "cybersecurity",
@@ -11432,6 +11962,26 @@
       "author": "mukul975",
       "license": "Apache-2.0",
       "path": "skills/performing-power-grid-cybersecurity-assessment"
+    },
+    {
+      "name": "performing-privacy-impact-assessment",
+      "description": ">",
+      "domain": "cybersecurity",
+      "subdomain": "privacy-compliance",
+      "tags": [
+        "privacy",
+        "impact-assessment",
+        "GDPR",
+        "CCPA",
+        "NIST",
+        "DPIA",
+        "data-flow-mapping",
+        "risk-scoring"
+      ],
+      "version": "1.0",
+      "author": "mukul975",
+      "license": "Apache-2.0",
+      "path": "skills/performing-privacy-impact-assessment"
     },
     {
       "name": "performing-privilege-escalation-assessment",
@@ -11505,6 +12055,23 @@
       "author": "mukul975",
       "license": "Apache-2.0",
       "path": "skills/performing-privileged-account-discovery"
+    },
+    {
+      "name": "performing-purple-team-atomic-testing",
+      "description": ">",
+      "domain": "cybersecurity",
+      "subdomain": "purple-team",
+      "tags": [
+        "purple-team",
+        "atomic-red-team",
+        "mitre-attack",
+        "detection-engineering",
+        "adversary-emulation"
+      ],
+      "version": "1.0.0",
+      "author": "mukul975",
+      "license": "Apache-2.0",
+      "path": "skills/performing-purple-team-atomic-testing"
     },
     {
       "name": "performing-purple-team-exercise",
@@ -11783,17 +12350,18 @@
       "path": "skills/performing-soc-tabletop-exercise"
     },
     {
-      "name": "performing-soc-2-type-ii-audit-preparation",
-      "description": "SOC 2 Type II audit preparation involves designing, implementing, and demonstrating the operational effectiveness of controls aligned to the AICPA Trust Services Criteria (TSC) over a defined audit pe",
+      "name": "performing-soc2-type2-audit-preparation",
+      "description": ">",
       "domain": "cybersecurity",
-      "subdomain": "compliance-governance",
+      "subdomain": "governance-risk-compliance",
       "tags": [
-        "compliance",
-        "governance",
+        "performing",
         "soc2",
+        "type2",
         "audit",
-        "trust-services-criteria",
-        "aicpa"
+        "preparation",
+        "compliance",
+        "grc"
       ],
       "version": "1.0",
       "author": "mukul975",
