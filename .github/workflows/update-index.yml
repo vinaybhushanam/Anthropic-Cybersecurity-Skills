@@ -29,8 +29,18 @@ jobs:
               skill_md = os.path.join(skills_dir, skill_name, "SKILL.md")
               if not os.path.isfile(skill_md):
                   continue
+              with open(skill_md, "r", encoding="utf-8") as f:
+                  content = f.read()
+              fm_match = re.match(r"^---\n(.*?)\n---", content, re.DOTALL)
+              description = ""
+              if fm_match:
+                  m = re.search(r"^description:\s*(.+)$", fm_match.group(1), re.MULTILINE)
+                  if m:
+                      description = m.group(1).strip().strip('"')
               skills.append({
                   "name": skill_name,
+                  "description": description,
+                  "domain": "cybersecurity",
                   "path": f"skills/{skill_name}"
               })
 
